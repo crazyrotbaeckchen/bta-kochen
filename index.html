@@ -6,16 +6,24 @@
     <title>BTA Kochen | Startseite</title>
     <meta name="description:" content="Die Kochseite für Webworker. Tolle Rezepte, einfach zu kochen, alles super lecker">
     <meta name="viewport:" content="width=device-width, initial-scale=1, user-scalable=yes"> <!-- ob user zoomen darf-->
+    <link rel="stylesheet" href="fonts/icons.css">
     <link rel="stylesheet" href="style.css"> <!-- um zu stylen-->
   </head>
   <body>
       <header id="navi-header"> <!-- Kopfzeile-->
+
+
         <div class="wrapper"> <!-- Hilfskarton zum stylen, leere Hülle-->
-          <a href="index.html"> <!-- Link setzen, und Website verlinken-->
-            <img src="img/logo.png" alt="Logo Kochen 2.0", height= "40"> <!-- scr Bilder einfügen, alt titel, es gibt kein schließenden IMG tag, Höhe und Breite kann eingestellt werden height oder width-->
-          </a> <!-- a sind Links
-           schließen-->
-            <nav> <!-- Navigationsleiste, nav Element für Navigation-->
+          <a href="www.ieconline.de"> <!-- Link setzen, und Website verlinken-->
+            <img id="logo"src="img/logo.svg" alt="Logo Kochen 2.0", height= "40"> <!-- scr Bilder einfügen, alt titel, es gibt kein schließenden IMG tag, Höhe und Breite kann eingestellt werden height oder width-->
+          </a>
+           <!-- a sind Links schließen-->
+
+           <button id="burger" type="button" name="button">
+
+           <span class="icon-menu"></span>
+           </button>
+            <nav id="menu"> <!-- Navigationsleiste, nav Element für Navigation-->
               <ul> <!--Listeelemente-->
                 <li>
                   <a href =  "index.html" id ="navi"> Home </a>
@@ -33,5 +41,16 @@
               </nav>
         </div>
       </header>
+      <main id="hauptteil">
+        <div class="hero">
+          <div class="hero-text">
+            <h1> Die besten rezepte für Webworker </h1>
+            <h2> Es gibt mehr als Pizza & Ravioli </h2>
+            <a href="#">Entdecke die Leckerein </a>
+          </div>
+        </div>
+</main>
+      <!-- hier kommt das java script-->
+      <script type="text/javascript" src="menu.js"></script>
   </body>
 </html>

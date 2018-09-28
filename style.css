@@ -7,8 +7,10 @@ body{
   line-height: 1.4;
   font-size: 16px
 }
+/* Navi-header ist der gesamte graue Kasten */
 #navi-header{
   background-color:rgb(40,44,52);
+  height: 60px;
 }
 .wrapper{
   width: 90%;
@@ -19,3 +21,87 @@ ul{
   margin:0;
   padding:0;
  }
+#navi-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.8s; ease-in color;
+}
+
+/* Die Farben der Überschriften auf weiß ändern, keine Unterstreichung*/
+#navi-header a:hover{
+  color:  rgb(69, 139,116);
+}
+  #menu{
+    display:none;
+
+  }
+  #logo{
+    margin-top: 10px
+  }
+
+  #burger {
+    background: transparent;
+    color: #fff;
+    float: right;
+    border: none;
+    font-size: 2rem;
+    margin-top: 11px;
+
+
+  }
+  #menu.show{
+    display:block;
+    background-color: rgb(40,44,52);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left:0;
+    text-align: center;
+  }
+  .hero{
+    background-image: url(img/intro.jpg);
+    height: 100vh;
+    background-size: color;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    }
+
+.hero-text{
+  color:#fff;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-text a{
+  color: #fff;
+  text-decoration: none;
+  background: rgb(102,205,170);
+  padding:1rem;
+  border-radius:4px;
+  border: 1px solid #fff;
+  transition: 0,8s;
+}
+
+.hero-text a:hover{
+  background: rgb(69,139,116);
+}
+
+/* a:hover wenn man über einen Text mit der maus klickt*/
+@media (min-width:1024px) {
+  #navi-header li{
+    display: inline-block;
+    margin-left:10px;
+  }
+#burger {
+  display: none}
+/* Menü nach rechts verschieben und abstand wählen */
+
+#menu {
+  float: right;
+  display: block;
+  margin-top:10px;
+}
+}
