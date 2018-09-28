@@ -75,19 +75,60 @@ ul{
   text-align: center;
 }
 
-.hero-text a{
+.hero-text a, .card a{
   color: #fff;
   text-decoration: none;
   background: rgb(102,205,170);
   padding:1rem;
   border-radius:4px;
   border: 1px solid #fff;
-  transition: 0,8s;
+  transition: 0.8s;
 }
 
-.hero-text a:hover{
+.hero-text a:hover, .card a:hover{
   background: rgb(69,139,116);
 }
+
+.border{
+  border-top: none;
+  border-bottom: solid;
+  border-right: solid ;
+  border-left: solid ;
+  border-width: 1px;
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius: 4px;
+  padding: 1rem;
+}
+
+main img{
+width: 100%;
+display: block;
+
+}
+
+h3{
+  margin: 0;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+.card a{
+  display: block;
+  text-align: center;
+}
+
+.card img{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card{
+  margin-top: : 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 
 /* a:hover wenn man über einen Text mit der maus klickt*/
 @media (min-width:1024px) {
@@ -95,6 +136,19 @@ ul{
     display: inline-block;
     margin-left:10px;
   }
+
+  .flexbox{
+    display:flex;
+  }
+
+.card:first-child{
+  margin-right: 0.5rem;
+}
+
+.card:last-child{
+  margin-left: 0.5rem;
+}
+
 #burger {
   display: none}
 /* Menü nach rechts verschieben und abstand wählen */
@@ -104,4 +158,9 @@ ul{
   display: block;
   margin-top:10px;
 }
+#rezepte{
+  width: 66.6666666%;
+}
+#Sidebar{
+  width: 33.33333%;
 }
